@@ -1,0 +1,10 @@
+Resources:
+  Code:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "open-devops-code-${AWS::Region}-${AWS::AccountId}"
+
+  Images:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "open-devops-images-${AWS::Region}-${AWS::AccountId}"
